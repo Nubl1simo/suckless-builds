@@ -1,0 +1,68 @@
+#
+# wm independent hotkeys
+#
+#
+# terminal emulator
+super + shift + Return
+	xfce4-terminal
+
+# terminal emulator
+super + Return
+	st
+
+# program launcher
+super + @space 
+	~/dox/sh/dmenu-scripts/dmenu-run.sh
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#
+# Custom startup keys
+#
+
+# workspaces loader
+super + x
+    ~/dox/sh/dmenu-scripts/workspaces.sh
+
+# edit config files script
+super + c
+	~/dox/sh/dmenu-scripts/config.sh
+
+# power dmenu script
+super + v
+	~/dox/sh/dmenu-scripts/lockmenu.sh
+
+# main web browser
+super + b
+	qutebrowser
+
+# secondary browser
+super + shift + b
+		firefox
+
+# cli file manager
+super + n
+	st -e /usr/bin/ranger
+
+# gui file manager
+super + shift + n
+	nemo
+
+# libreoffice writer
+super + shift + alt + o
+	lowriter
+
+# email client
+super + a
+	st -e $HOME/dox/sh/SM.sh
+
+# screenshot
+super + shift + s
+	gnome-screenshot
+
+# calcurse
+super + e
+	st -e /usr/bin/calcurse
+
